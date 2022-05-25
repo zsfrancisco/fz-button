@@ -1,0 +1,19 @@
+{
+  "name": "fz-button",
+  "version": "0.0.1",
+  "description": "Blue button for your website",
+  "keywords": ["blue", "button", "fz"],
+  "author": {
+    "name": "Francisco Zambrano",
+    "email": "franciscozambrano@oulook.es",
+    "url": "https://www.linkedin.com/zsfrancisco"
+  },
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

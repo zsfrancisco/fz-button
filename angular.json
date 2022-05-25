@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "fz-button": {
+      "projectType": "library",
+      "root": "projects/fz-button",
+      "sourceRoot": "projects/fz-button/src",
+      "prefix": "fzb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fz-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fz-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fz-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fz-button/src/test.ts",
+            "tsConfig": "projects/fz-button/tsconfig.spec.json",
+            "karmaConfig": "projects/fz-button/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "myTestApp"
